@@ -6,9 +6,9 @@ module.exports = (sequelize, DataTypes) => {
   class User extends Model {
   }
   User.init({
-    email: DataTypes.STRING,
+    email: DataTypes.TEXT,
     firstName: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       field: 'first_name'
     }
   }, {

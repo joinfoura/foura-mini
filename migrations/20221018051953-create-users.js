@@ -9,10 +9,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       email: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       },
       first_name: {
-        type: Sequelize.STRING
+        type: Sequelize.TEXT
       }
     });
   },
