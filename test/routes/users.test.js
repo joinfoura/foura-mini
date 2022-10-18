@@ -4,10 +4,9 @@ const Models = require('../../models');
 
 describe('GET /users', () => {
   describe('when no users exist', () => {
-    let user;
     let response;
 
-    beforeEach(async() => {
+    beforeEach(async () => {
       response = await supertest(app).get('/users');
     });
 
@@ -24,7 +23,7 @@ describe('GET /users', () => {
     let user;
     let response;
 
-    beforeEach(async() => {
+    beforeEach(async () => {
       user = await Models.User.create({
         email: 'tester@joinfoura.com',
         firstName: 'Tester'
