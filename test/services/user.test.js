@@ -8,17 +8,19 @@ describe('User', () => {
     beforeEach(async () => {
       user = await Models.User.create({
         email: 'tester@joinfoura.com',
-        firstName: 'Tester'
+        firstName: 'Tester',
+        lastName: 'Test'
       });
     });
 
-    test('it should set user status to unsubscribed', async () => {
+    test('it returns array containing user', async () => {
       expect(
         await User.findAll()
       ).toMatchObject([{
         id: user.id,
         email: user.email,
-        firstName: user.firstName
+        firstName: user.firstName,
+        lastName: user.lastName
       }]);
     });
   });

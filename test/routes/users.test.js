@@ -26,7 +26,8 @@ describe('GET /users', () => {
     beforeEach(async () => {
       user = await Models.User.create({
         email: 'tester@joinfoura.com',
-        firstName: 'Tester'
+        firstName: 'Tester',
+        lastName: 'Test'
       });
 
       response = await supertest(app).get('/users');
@@ -40,8 +41,9 @@ describe('GET /users', () => {
       expect(response.body).toMatchObject({
         users: [{
           id: user.id,
+          email: user.email,
           firstName: user.firstName,
-          email: user.email
+          lastName: user.lastName
         }]
       });
     });
