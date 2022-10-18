@@ -18,7 +18,7 @@ describe('User', () => {
       ).toMatchObject([{
         id: user.id,
         email: user.email,
-        firstName: user.firstName,
+        firstName: user.firstName
       }]);
     });
   });
