@@ -7,7 +7,3 @@ beforeEach(async () => {
 
   await Models.sequelize.truncate({ cascade: true });
 });
-
-// afterAll(async() => {
-//   await Models.sequelize.close();
-// });
