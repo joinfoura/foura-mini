@@ -2,7 +2,6 @@ const supertest = require('supertest');
 const app = require('../../app');
 const Models = require('../../models');
 
-
 describe('GET /users', () => {
   describe('when no users exist', () => {
     let user;
