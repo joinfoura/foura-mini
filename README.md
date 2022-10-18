@@ -1,6 +1,6 @@
 # Foura Mini - Coding Test #
 
-In this replica of our tech stack, you've been tasked with adding a new field `lastName` to the `User` model that an existing HTTP endpoint can return in its results e.g.
+In this replica of our tech stack, you'll add a new field `user.lastName` and return it via an existing HTTP endpoint e.g.
 
 ```
 Given User { id: 1, email: 'tester@joinfoura.com', firstName: 'Tester', lastName: 'Test' }
@@ -12,7 +12,8 @@ Then I receive { users: [{ id: 1, email: 'tester@joinfoura.com', firstName: 'Tes
 
 1. tests pass with `npm test`
 2. linting passes with `npm run lint`
-3. you've opened a pull request requesting a merge from your forked repository branch containing the changes required
+3. all changes have been committed to the `user/add_last_name` branch
+4. the project has been compressed and emailed to Adam
 
 ### Setup ###
 
@@ -26,10 +27,9 @@ Then I receive { users: [{ id: 1, email: 'tester@joinfoura.com', firstName: 'Tes
 
 #### Code
 
-1. fork this project to your GitHub account
-2. `git clone git@github.com:<YOUR_GITHUB_ACCOUNT>/foura-mini.git`
-3. `npm install`
-4. `git checkout -b user/add_last_name`
+1. `git clone git@github.com:joinfoura/foura-mini.git`
+2. `npm install`
+3. `git checkout -b user/add_last_name`
 
 #### Database
 
